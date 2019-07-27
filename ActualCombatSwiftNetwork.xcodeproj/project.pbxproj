@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EEC091D31080144C0D0069E /* Pods_ActualCombatSwiftNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39330C57E888B8CE9E70B66 /* Pods_ActualCombatSwiftNetwork.framework */; };
 		762F1FCE22EC85630090EFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F1FCD22EC85630090EFDF /* AppDelegate.swift */; };
 		762F1FD022EC85630090EFDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F1FCF22EC85630090EFDF /* ViewController.swift */; };
 		762F1FD322EC85630090EFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762F1FD122EC85630090EFDF /* Main.storyboard */; };
 		762F1FD522EC85650090EFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762F1FD422EC85650090EFDF /* Assets.xcassets */; };
 		762F1FD822EC85650090EFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762F1FD622EC85650090EFDF /* LaunchScreen.storyboard */; };
+		76E6F39D22EC88A10092BD38 /* BaseAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E6F39C22EC88A10092BD38 /* BaseAPIServices.swift */; };
+		76E6F39F22EC8A320092BD38 /* AccountsAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E6F39E22EC8A320092BD38 /* AccountsAPIServices.swift */; };
+		76E6F3A322EC8C710092BD38 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E6F3A222EC8C710092BD38 /* LoginResult.swift */; };
+		76E6F3A522EC98150092BD38 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E6F3A422EC98150092BD38 /* MainTabBarController.swift */; };
+		76E6F3A722EC98F10092BD38 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E6F3A622EC98F10092BD38 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		310DFD84382FB08FEF7D3C96 /* Pods-ActualCombatSwiftNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActualCombatSwiftNetwork.debug.xcconfig"; path = "Target Support Files/Pods-ActualCombatSwiftNetwork/Pods-ActualCombatSwiftNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		762F1FCA22EC85630090EFDF /* ActualCombatSwiftNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActualCombatSwiftNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		762F1FCD22EC85630090EFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		762F1FCF22EC85630090EFDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,13 @@
 		762F1FD422EC85650090EFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		762F1FD722EC85650090EFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		762F1FD922EC85650090EFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76E6F39C22EC88A10092BD38 /* BaseAPIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIServices.swift; sourceTree = "<group>"; };
+		76E6F39E22EC8A320092BD38 /* AccountsAPIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsAPIServices.swift; sourceTree = "<group>"; };
+		76E6F3A222EC8C710092BD38 /* LoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		76E6F3A422EC98150092BD38 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		76E6F3A622EC98F10092BD38 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7D7B770A1B67C5D3BA18890E /* Pods-ActualCombatSwiftNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActualCombatSwiftNetwork.release.xcconfig"; path = "Target Support Files/Pods-ActualCombatSwiftNetwork/Pods-ActualCombatSwiftNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		C39330C57E888B8CE9E70B66 /* Pods_ActualCombatSwiftNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActualCombatSwiftNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEC091D31080144C0D0069E /* Pods_ActualCombatSwiftNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39AAB1BF2F2215D509B12CD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39330C57E888B8CE9E70B66 /* Pods_ActualCombatSwiftNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		762F1FC122EC85630090EFDF = {
 			isa = PBXGroup;
 			children = (
 				762F1FCC22EC85630090EFDF /* ActualCombatSwiftNetwork */,
 				762F1FCB22EC85630090EFDF /* Products */,
+				F9992C7AE709B0BC9A84E7F6 /* Pods */,
+				39AAB1BF2F2215D509B12CD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +79,44 @@
 		762F1FCC22EC85630090EFDF /* ActualCombatSwiftNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				76E6F3A122EC8C690092BD38 /* Model */,
+				76E6F39B22EC885B0092BD38 /* APIServices */,
 				762F1FCD22EC85630090EFDF /* AppDelegate.swift */,
 				762F1FCF22EC85630090EFDF /* ViewController.swift */,
+				76E6F3A622EC98F10092BD38 /* SignUpViewController.swift */,
 				762F1FD122EC85630090EFDF /* Main.storyboard */,
 				762F1FD422EC85650090EFDF /* Assets.xcassets */,
 				762F1FD622EC85650090EFDF /* LaunchScreen.storyboard */,
 				762F1FD922EC85650090EFDF /* Info.plist */,
+				76E6F3A422EC98150092BD38 /* MainTabBarController.swift */,
 			);
 			path = ActualCombatSwiftNetwork;
+			sourceTree = "<group>";
+		};
+		76E6F39B22EC885B0092BD38 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				76E6F39C22EC88A10092BD38 /* BaseAPIServices.swift */,
+				76E6F39E22EC8A320092BD38 /* AccountsAPIServices.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		76E6F3A122EC8C690092BD38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76E6F3A222EC8C710092BD38 /* LoginResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9992C7AE709B0BC9A84E7F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				310DFD84382FB08FEF7D3C96 /* Pods-ActualCombatSwiftNetwork.debug.xcconfig */,
+				7D7B770A1B67C5D3BA18890E /* Pods-ActualCombatSwiftNetwork.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 762F1FDC22EC85650090EFDF /* Build configuration list for PBXNativeTarget "ActualCombatSwiftNetwork" */;
 			buildPhases = (
+				9BF0E622516EB2A483A82946 /* [CP] Check Pods Manifest.lock */,
 				762F1FC622EC85630090EFDF /* Sources */,
 				762F1FC722EC85630090EFDF /* Frameworks */,
 				762F1FC822EC85630090EFDF /* Resources */,
+				20CE05C2ACA3E5777DD1AE93 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +187,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20CE05C2ACA3E5777DD1AE93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ActualCombatSwiftNetwork/Pods-ActualCombatSwiftNetwork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ActualCombatSwiftNetwork/Pods-ActualCombatSwiftNetwork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ActualCombatSwiftNetwork/Pods-ActualCombatSwiftNetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BF0E622516EB2A483A82946 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ActualCombatSwiftNetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		762F1FC622EC85630090EFDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E6F39D22EC88A10092BD38 /* BaseAPIServices.swift in Sources */,
+				76E6F3A722EC98F10092BD38 /* SignUpViewController.swift in Sources */,
 				762F1FD022EC85630090EFDF /* ViewController.swift in Sources */,
+				76E6F3A522EC98150092BD38 /* MainTabBarController.swift in Sources */,
+				76E6F3A322EC8C710092BD38 /* LoginResult.swift in Sources */,
+				76E6F39F22EC8A320092BD38 /* AccountsAPIServices.swift in Sources */,
 				762F1FCE22EC85630090EFDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +384,12 @@
 		};
 		762F1FDD22EC85650090EFDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310DFD84382FB08FEF7D3C96 /* Pods-ActualCombatSwiftNetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR3HKQ7MQQ;
 				INFOPLIST_FILE = ActualCombatSwiftNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +397,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yasuoyuhao.me.ActualCombatSwiftNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,9 +405,12 @@
 		};
 		762F1FDE22EC85650090EFDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7B770A1B67C5D3BA18890E /* Pods-ActualCombatSwiftNetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR3HKQ7MQQ;
 				INFOPLIST_FILE = ActualCombatSwiftNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +418,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yasuoyuhao.me.ActualCombatSwiftNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
