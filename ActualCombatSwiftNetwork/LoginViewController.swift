@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  ActualCombatSwiftNetwork
 //
 //  Created by 陳囿豪 on 2019/7/27.
@@ -10,7 +10,7 @@ import UIKit
 import PKCHelper
 import PromiseKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     lazy var emailTextField: UITextField = {
         let tf = UITextField()

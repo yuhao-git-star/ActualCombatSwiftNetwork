@@ -51,7 +51,7 @@ class SignUpViewController: UIViewController {
         bt.setTitle("註冊", for: .normal)
         bt.setTitleColor(.white, for: .normal)
         bt.backgroundColor = UIColor.arizonaStateUniversityRed
-        bt.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        bt.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
         bt.layer.cornerRadius = 8
         
         return bt
@@ -75,7 +75,9 @@ class SignUpViewController: UIViewController {
         signupButton.anchor(top: emailContentTextField.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 32, left: 16, bottom: 0, right: 16), size: .init(width: 0, height: 50))
     }
     
-    @objc fileprivate func handleLogin() {
+    @objc fileprivate func handleSignUp() {
+        
+        // 打印欄位訊息
         PKCLogger.shared.debug(emailTextField.text)
         PKCLogger.shared.debug(passwordTextField.text)
         PKCLogger.shared.debug(nameTextField.text)
@@ -86,6 +88,7 @@ class SignUpViewController: UIViewController {
             let name = nameTextField.text,
             let emailContent = emailContentTextField.text else { return }
         
+        // 呼叫註冊服務
         _ = AccountsAPIServices.shared.signup(email: email, password: password, name: name, emailContent: emailContent).done { (token) in
             PKCLogger.shared.debug(token)
             }.catch { (error) in

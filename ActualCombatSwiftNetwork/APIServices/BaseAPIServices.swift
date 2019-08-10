@@ -53,6 +53,36 @@ enum AuthAPIURL: APIServicesURLProtocol {
     }
 }
 
+enum ProductAPIURL: APIServicesURLProtocol {
+    
+    public var rootURL: String {
+        return  "products/"
+    }
+    
+    case fetch
+    
+    public var url: String {
+        return getURL()
+    }
+    
+    private func getURL() -> String {
+        var resource = ""
+        
+        switch self {
+        case .fetch:
+            resource = ""
+        }
+        
+        return "\(rootURL)\(resource)"
+    }
+}
+
+class AuthToken {
+    static let shared = AuthToken()
+    
+    var token: String?
+}
+
 class BaseAPIServices {
     
     /**
@@ -66,12 +96,19 @@ class BaseAPIServices {
         
         let url = ServicesURL.baseurl + route.url
         
+        var headers: HTTPHeaders?
+        
+        if let token = AuthToken.shared.token {
+            headers = HTTPHeaders()
+            headers?.updateValue(token, forKey: "Authorization")
+        }
+        
         return Alamofire.request(
             url,
             method: method,
             parameters: parameters,
             encoding: encoding,
-            headers: nil
+            headers: headers
         )
     }
     

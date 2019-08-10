@@ -19,16 +19,22 @@ class MainTabBarController: UITabBarController {
     
     fileprivate func setupViewController() {
         
-        // Home
-        let loginController = ViewController()
+        // Login
+        let loginController = LoginViewController()
         loginController.title = "Login"
         let navLoginController = templateNavController(image: nil, rootViewController: loginController, selectImage: nil)
         
-        // Home
+        // SignUp
         
          let signUpController = SignUpViewController()
         signUpController.title = "SignUp"
         let navSignUpController = templateNavController(image: nil, rootViewController: signUpController, selectImage: nil)
+        
+        // Products
+        
+        let productsViewController = ProductsViewController()
+        productsViewController.title = "Products"
+        let navProductsViewController = templateNavController(image: nil, rootViewController: productsViewController, selectImage: nil)
         
         // tabBar
         
@@ -37,7 +43,8 @@ class MainTabBarController: UITabBarController {
         
         viewControllers = [
             navLoginController,
-            navSignUpController
+            navSignUpController,
+            navProductsViewController
         ]
         
     }
